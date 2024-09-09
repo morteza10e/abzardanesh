@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">daneshjooyarApp</string>
+    <string name="todo">todo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="complete">من این بخش رو کامل دیدم</string>
+    <string name="darsadpishraft">درصد پیشرفت</string>
+</resources>

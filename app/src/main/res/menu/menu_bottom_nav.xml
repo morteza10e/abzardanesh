@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/home_selector"
+        android:title="خانه"/>
+
+    <item
+        android:id="@+id/aboutUs_menu"
+        android:icon="@drawable/about_selector"
+        android:title="درباره ما"/>
+
+    <item
+        android:id="@+id/madrak_menu"
+        android:icon="@drawable/madrak_selector"
+        android:title="مدرک"/>
+</menu>

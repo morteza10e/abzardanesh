@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".activity.VerifyActivity">
+
+    <ImageView
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo_abzar" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:text="کد تایید ۵ رقمی را وارد کنید."
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="کد تایید برای شماره موبایل 09913928660 ارسال شد."
+        android:textColor="@color/text_black" />
+
+
+    <TextView
+        android:id="@+id/tv_edit_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/edit"
+        android:drawablePadding="7dp"
+        android:text="ویرایش شماره"
+        android:textColor="#000080"
+        android:textSize="17sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:errorEnabled="true">
+
+
+        <com.wynsbin.vciv.VerificationCodeInputView
+            android:id="@+id/verify_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            app:vciv_et_background="@android:color/white"
+            app:vciv_et_cursor_color="@color/blue"
+            app:vciv_et_height="58dp"
+
+            app:vciv_et_inputType="number"
+            app:vciv_et_number="5"
+            app:vciv_et_text_color="@android:color/black"
+            app:vciv_et_text_size="18sp"
+            app:vciv_et_underline_default_color="#8F8F8F"
+            app:vciv_et_underline_height="2dp"
+            app:vciv_et_underline_show="true"
+            app:vciv_et_width="58dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_btn"
+        android:text="تایید و ادامه"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+
+
+
+</LinearLayout>
